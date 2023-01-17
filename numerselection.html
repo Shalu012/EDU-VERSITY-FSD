@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>
+		How to select a random element
+		from array in JavaScript ?
+	</title>
+</head>
+
+<body bgcolor="red" style = "text-align:center;">
+	
+	<h1 style = "color:rgb(128, 0, 107);">Array Program</h1>
+	
+	<p id = "GFG_UP" style ="font-size: 15px; font-weight: bold;">
+	</p>
+	
+	<button id = "button" onclick = "GFG_FUN()">
+		click here
+	</button>
+	
+	<p id = "GFG_DOWN" style ="font-size: 24px; font-weight: bold; color: green;">
+	</p>
+	
+	<script>
+		var up = document.getElementById('GFG_UP');
+		var down = document.getElementById('GFG_DOWN');
+		
+		var array = ["CSE", "ECE","EEE", "MECH"];
+		
+		up.innerHTML = "Click on the button to check  about course"
+			+ "the type of element.<br><br>" + array;
+		
+		function GFG_FUN() {
+			down.innerHTML =array[Math.floor(Math.random() * array.length)];
+		}
+	</script>
+</body>
+
+</html>
